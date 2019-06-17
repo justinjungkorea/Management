@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.korea.justinjung.management.LoginActivity">
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="아이디"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/passwordText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="9dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:ems="10"
+        android:hint="비밀번호"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/loginButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idText" />
+
+    <Button
+        android:id="@+id/loginButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:text="로그인"
+        app:layout_constraintBottom_toTopOf="@+id/joinButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordText" />
+
+    <TextView
+        android:id="@+id/joinButton"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="304dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginStart="14dp"
+        android:text="회원가입"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/loginButton" />
+</android.support.constraint.ConstraintLayout>
