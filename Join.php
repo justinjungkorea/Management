@@ -10,7 +10,6 @@
 	$stmt->bind_param("sssi", $userID, $userPassword, $userName, $userAge);
 	$stmt->execute();
 
-
 	$response = array();
 	$response["success"] = true;
 
