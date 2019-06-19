@@ -49,16 +49,10 @@ public class JoinActivity extends AppCompatActivity {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(JoinActivity.this);
                                 final Intent intent = new Intent(JoinActivity.this, LoginActivity.class);
                                 builder.setMessage("회원 등록 성공!")
-                                        .setPositiveButton("확인", new DialogInterface.OnClickListener() {
-                                            @Override
-                                            public void onClick(DialogInterface dialog, int which) {
-                                                JoinActivity.this.startActivity(intent);
-                                            }
-                                        })
+                                        .setPositiveButton("확인", null)
                                         .create()
                                         .show();
-
-
+                                finish();
                             } else {
                                 AlertDialog.Builder builder = new AlertDialog.Builder(JoinActivity.this);
                                 builder.setMessage("회원 등록 실패")

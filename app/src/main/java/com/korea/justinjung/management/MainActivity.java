@@ -42,13 +42,13 @@ public class MainActivity extends AppCompatActivity {
         managementButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                new BackgorungTask().execute();
+                new backgroundTask().execute();
             }
         });
 
     }
 
-    class BackgorungTask extends AsyncTask<Void, Void, String>{
+    class backgroundTask extends AsyncTask<Void, Void, String>{
 
         String target;
 
